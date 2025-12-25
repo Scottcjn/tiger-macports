@@ -17,13 +17,20 @@ Pre-built binaries and installation guide for running modern tools on Tiger.
 
 ## Credits
 
-**MacPorts Team** - Did the heavy lifting of porting modern software to PowerPC Tiger. Their Portfiles handle the complex patches needed for old systems.
+**Sergey Fedorov ([barracuda156](https://github.com/barracuda156))** - The legend keeping PowerPC MacPorts alive! His [powerpc-ports](https://github.com/barracuda156/powerpc-ports) repo has 1000+ fixes for PowerPC. Without his work, none of this would be possible.
+
+**MacPorts Team** - The core MacPorts infrastructure and Portfiles.
+
+**Other PowerPC Heroes:**
+- [kencu](https://github.com/kencu) - Core MacPorts contributor
+- [glebm](https://github.com/glebm) - GCC updates for Tiger
+- [macos-powerpc](https://github.com/macos-powerpc) - Community PowerPC ports
 
 **Scott (Scottcjn)** - Testing on real G4/G5 hardware, packaging binaries, documentation, and original Tiger tools (wget, PocketFox).
 
 **Claude (Opus 4.1/4.5)** - Implementation assistance.
 
-*MacPorts does the porting. We do the testing, packaging, and original tools.*
+*barracuda156 does the porting. We do the testing, packaging, and original tools.*
 
 ## Pre-Built Binaries
 
