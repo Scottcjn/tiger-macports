@@ -158,6 +158,12 @@ Build OpenSSH 9.6 with LibreSSL. See [rust-ppc-tiger](https://github.com/Scottcj
 - **Our original code**: MIT License
 - **Documentation**: MIT License
 
+## Community
+
+Join the RustChain Discord:
+
+[![Discord](https://img.shields.io/badge/Discord-RustChain-7289DA?logo=discord&logoColor=white)](https://discord.gg/tQ4q3z4M)
+
 ---
 
 ## Traffic Note
