@@ -98,7 +98,7 @@ sudo port install openssl
 | Model | OS | Status |
 |-------|-----|--------|
 | Power Mac G4 Dual 1.25 GHz | Tiger 10.4.11 | ✅ All working |
-| Power Mac G5 Quad | Tiger 10.4.11 | ✅ All working |
+| Power Mac G5 Dual | Tiger 10.4.11 | ✅ All working |
 | PowerBook G4 | Tiger 10.4.11 | ✅ All working |
 
 ## What Works on Tiger via MacPorts
@@ -114,7 +114,11 @@ sudo port install openssl
 
 ### Compiling (In Progress)
 - Node.js 14
-- Rust (experimental)
+
+### Not MacPorts (Our Custom Code)
+- **Rust compiler** - See [rust-ppc-tiger](https://github.com/Scottcjn/rust-ppc-tiger)
+- **PocketFox browser** - See [pocketfox](https://github.com/Scottcjn/pocketfox)
+- **wget with TLS** - See [pocketfox](https://github.com/Scottcjn/pocketfox)
 
 ### Not Working / Not Tested
 - Node.js 18+ (V8 too new)
