@@ -11,6 +11,7 @@ Pre-built binaries and installation guide for running modern tools on Tiger.
 | Python | 3.10.18 | ✅ Working | Testing, packaging, documentation |
 | curl | 7.88.1 | ✅ Working | Testing, packaging, documentation |
 | OpenSSL | 3.5.1 | ✅ Working | Testing, packaging, documentation |
+| OpenSSH | 8.0p1 | ✅ **Binary Available** | Testing, packaging, documentation |
 | Node.js | 14.x | 🔄 Building | Testing, packaging, documentation |
 | wget | custom | ✅ Working | **Original code** (TLS 1.2 for Tiger) |
 | PocketFox | custom | ✅ Working | **Original code** (Cocoa browser) |
@@ -36,11 +37,30 @@ Pre-built binaries and installation guide for running modern tools on Tiger.
 
 Download ready-to-use binaries - no compiling needed!
 
+### OpenSSH 8.0p1 with OpenSSL 1.1.1
+
+Secure SSH replacing Tiger's vulnerable 4.5:
+
+```bash
+# Download
+curl -LO https://github.com/Scottcjn/tiger-macports/raw/main/binaries/openssh-8.0p1-tiger-ppc.tar.gz
+
+# Extract to /usr/local
+cd /usr/local
+sudo tar xzf ~/openssh-8.0p1-tiger-ppc.tar.gz
+
+# Test
+/usr/local/bin/ssh -V
+# OpenSSH_8.0p1, OpenSSL 1.1.1w
+```
+
+**CVEs Fixed:** CVE-2016-0777, CVE-2016-0778, CVE-2015-5600, and many more!
+
 ### curl 7.88.1 with TLS 1.2
 
 ```bash
 # Download
-curl -LO https://github.com/Scottcjn/tiger-macports/releases/download/v1.0/curl-7.88.1-tiger-ppc.tar.gz
+curl -LO https://github.com/Scottcjn/tiger-macports/raw/main/binaries/curl-7.88.1-tiger-ppc.tar.gz
 
 # Extract to /usr/local
 cd /usr/local
