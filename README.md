@@ -72,19 +72,15 @@ sudo tar xzf ~/curl-7.88.1-tiger-ppc.tar.gz
 /usr/local/bin/curl https://github.com
 ```
 
-### Python 3.10.18
+### Python 3.10.18 (build with MacPorts)
 
 ```bash
-# Download
-curl -LO https://github.com/Scottcjn/tiger-macports/releases/download/v1.0/python310-tiger-ppc.tar.gz
-
-# Extract
-cd /usr/local
-sudo tar xzf ~/python310-tiger-ppc.tar.gz
+# Build with MacPorts
+sudo port install python310
 
 # Test
-/usr/local/bin/python3.10 --version
-/usr/local/bin/python3.10 -c "import ssl; print(ssl.OPENSSL_VERSION)"
+/opt/local/bin/python3.10 --version
+/opt/local/bin/python3.10 -c "import ssl; print(ssl.OPENSSL_VERSION)"
 ```
 
 ## Installing MacPorts (Build From Source)
