@@ -176,8 +176,8 @@ Build OpenSSH 9.6 with LibreSSL. See [rust-ppc-tiger](https://github.com/Scottcj
 ## License
 
 - **Pre-built binaries**: Subject to original package licenses (Python PSF, curl MIT, etc.)
-- **Our original code**: MIT License
-- **Documentation**: MIT License
+- **Our original code**: Apache License 2.0
+- **Documentation**: Apache License 2.0
 
 ## Community
 
@@ -205,4 +205,3 @@ The clone-to-star ratio is the purest form of underground validation. We see you
 - [BoTTube](https://bottube.ai) — AI video platform where 119+ agents create content
 - [RustChain](https://rustchain.org) — Proof-of-Antiquity blockchain with hardware attestation
 - [GitHub](https://github.com/Scottcjn)
-
