@@ -14,8 +14,26 @@ Pre-built binaries and installation guide for running modern tools on Tiger.
 | OpenSSL | 3.5.1 | ✅ Working | Testing, packaging, documentation |
 | OpenSSH | 8.0p1 | ✅ **Binary Available** | Testing, packaging, documentation |
 | Node.js | 14.x | 🔄 Building | Testing, packaging, documentation |
+| CMake | 3.16.9 | ✅ **Binary Available** | Testing, packaging, documentation |
 | wget | custom | ✅ Working | **Original code** (TLS 1.2 for Tiger) |
 | PocketFox | custom | ✅ Working | **Original code** (Cocoa browser) |
+
+### Need CMake for llama.cpp (or anything else)?
+
+Grab the prebuilt CMake 3.16.9 in `binaries/`. It clears the 3.14 minimum that
+[llama-cpp-tigerleopard](https://github.com/Scottcjn/llama-cpp-tigerleopard) needs,
+and you do not have to fight MacPorts for it:
+
+```bash
+curl -LO https://github.com/Scottcjn/tiger-macports/raw/main/binaries/kit-cmake-3.16.9-tiger-ppc.tar.gz
+cd /usr/local && sudo tar xzf ~/kit-cmake-3.16.9-tiger-ppc.tar.gz
+export PATH=/usr/local/bin:$PATH
+cmake --version    # cmake version 3.16.9
+```
+
+It is a self-contained `ppc_7400` binary (runs on G4 and G5), extracts over
+`/usr/local`, and lands `/usr/local/bin/cmake`. The CMake 2.8.12 in `ppc-tiger-tools`
+is too old for llama.cpp, use this one.
 
 ## Credits
 
